@@ -2,8 +2,7 @@ name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: '🚀 Features'
-    labels:
-      - 'features'
+    label: 'features'
   - title: '🧰 Improvements'
     label: 'imporvements'
   - title: '🐛 Bug Fixes'
