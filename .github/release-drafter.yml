@@ -14,9 +14,6 @@ categories:
     label: 'chore'
 change-template: '- $TITLE'
 change-title-escapes: '\<*_&@#' # You can add # and @ to disable mentions, and add ` to disable code blocks.
-replacers:
-  - search: '/JIRA'
-    replace: '\n'
 version-resolver:
   major:
     labels:
