@@ -25,6 +25,9 @@ version-resolver:
     labels:
       - 'patch'
   default: patch
+ replacers:
+  - search: '/JIRA'
+    replace: '\n'
 template: |
   ## Changes
 
