@@ -8,11 +8,11 @@ categories:
   - title: '🐛 Bug Fixes'
     labels:
       - 'bug'
-change-template: '- $TITLE'
+change-template: '- $TITLE $URL'
 change-title-escapes: '\<*_&@#' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 replacers:
   - search: '/(\[)(JIRA-\d+)(\])/'
-    replace: 'https://zedaio.atlassian.net/browse/$2'
+    replace: '(Jira : https://zedaio.atlassian.net/browse/$2)'
 exclude-labels:
   - 'skip-changelog'
 version-resolver:
