@@ -1,0 +1,32 @@
+name-template: 'v$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '🚀 Features'
+    label: 'feature'
+  - title: '🧰 Improvements'
+    label: 'improvement'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'bug'
+change-template: '- $TITLE $URL'
+change-title-escapes: '\<*_&@#' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+replacers:
+  - search: '/(\[)(JIRA-\d+)(\])/'
+    replace: '( Jira : https://zedaio.atlassian.net/browse/$2 )'
+exclude-labels:
+  - 'skip-changelog'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## Changes
+
+  $CHANGES
