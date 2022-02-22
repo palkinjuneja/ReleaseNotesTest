@@ -10,6 +10,9 @@ categories:
       - 'bug'
 change-template: '- $TITLE'
 change-title-escapes: '\<*_&@#' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+replacers:
+  - search: 'test'
+    replace: 'My Name'
 exclude-labels:
   - 'skip-changelog'
 version-resolver:
