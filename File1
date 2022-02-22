@@ -2,6 +2,9 @@ Test File
 Change1
 change2
 change3
+
+testing release drafter
+
 label -feature
 ///
 hhh
@@ -12,3 +15,4 @@ changee
 bbb
 changing regex
 GGG
+
