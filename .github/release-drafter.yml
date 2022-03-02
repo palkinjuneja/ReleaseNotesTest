@@ -11,8 +11,8 @@ categories:
 change-template: '- $TITLE $URL'
 change-title-escapes: '\<*_&@#' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 replacers:
-  - search: '/(\[)(JIRA-\d+)(\])/g'
-    replace: '( <a href = "https://zedaio.atlassian.net/browse/$2">$2</a> )'
+  - search: '/(\[)(JIRA-\d+)(\])(*)/g'
+    replace: '$4(<a href = "https://zedaio.atlassian.net/browse/$2">$2</a> )'
 exclude-labels:
   - 'skip-changelog'
 version-resolver:
